@@ -3,21 +3,16 @@
     margin: 0;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    flex-basis: content;
-}
-
 .head_Img {
     display: flex;
+    flex-basis: 100%;
     justify-content: center;
     background-color: #434343;
 }
 
 .pic {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-basis: 70%;
     flex-grow: 1;
 
@@ -39,10 +34,10 @@ body {
 }
 
 .pic img {
+    margin: 10px auto;
     width: 0;
     flex-basis: 20%;
-    padding: 30px;
-    border-radius: 40px;
+    border-radius: 15px;
 }
 
 .scrolltop {
@@ -72,7 +67,7 @@ body {
 
 .item {
     display: flex;
-    align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
 }
 
