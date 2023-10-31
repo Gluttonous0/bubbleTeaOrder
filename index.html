@@ -29,29 +29,41 @@
         <form action="" id="form">
             <!-- 表单内容 -->
             <div class="item">
-                <div class="left">奶茶口味：</div>
+                <legend class="left">奶茶口味：</legend>
                 <div class="right">
-                    <label for="ynbb"><input type="radio" id="ynbb" name="type" value="芋泥波波" checked> 芋泥波波</label>
-                    <label for="zztt"><input type="radio" id="zztt" name="type" value="芝芝桃桃"> 芝芝桃桃</label>
-                    <label for="drpt"><input type="radio" id="drpt" name="type" value="多肉葡萄"> 多肉葡萄</label>
+                    <div class="contect_inp"><input type="radio" id="ynbb" name="type" value="芋泥波波" checked><label
+                            for="ynbb">芋泥波波</label>
+                    </div>
+                    <div class="contect_inp"><input type="radio" id="zztt" name="type" value="芝芝桃桃"><label
+                            for="zztt">芝芝桃桃</label>
+                    </div>
+                    <div class="contect_inp"><input type="radio" id="drpt" name="type" value="多肉葡萄"><label
+                            for="drpt">多肉葡萄</label>
+                    </div>
                 </div>
             </div>
             <div class="item">
-                <div class="left">几杯：</div>
+                <legend class="left">几杯：</legend>
                 <div class="right">
                     <input type="number" name="num" required>
                 </div>
             </div>
             <div class="item">
-                <div class="left">杯型：</div>
+                <legend class="left">杯型：</legend>
                 <div class="right">
-                    <label for="superBig"><input type="radio" id="superBig" name="cup" checked value="超大杯"> 超大杯</label>
-                    <label for="big"><input type="radio" id="big" name="cup" value="大杯"> 大杯</label>
-                    <label for="middle"><input type="radio" id="middle" name="cup" value="中杯"> 中杯</label>
+                    <div class="contect_inp"><input type="radio" id="superBig" name="cup" checked value="超大杯"><label
+                            for="superBig">超大杯</label>
+                    </div>
+                    <div class="contect_inp"><input type="radio" id="big" name="cup" value="大杯"><label
+                            for="big">大杯</label>
+                    </div>
+                    <div class="contect_inp"><input type="radio" id="middle" name="cup" value="中杯"><label
+                            for="middle">中杯</label>
+                    </div>
                 </div>
             </div>
             <div class="item">
-                <div class="left">甜度：</div>
+                <legend class="left">甜度：</legend>
                 <div class="right">
                     <select name="sugar" id="">
                         <option value="无糖">无糖</option>
@@ -62,80 +74,106 @@
                 </div>
             </div>
             <div class="item">
-                <div class="left">免费小料：</div>
+                <legend class="left">免费小料：</legend>
                 <div class="right" id="small-Mate" name="smallMate">
-                    <label for="bb"><input type="checkbox" id="bb" name="smallMate" value="波霸"> 波霸</label>
-                    <label for="yg"><input type="checkbox" id="yg" name="smallMate" value="椰果"> 椰果</label>
-                    <label for="xml"><input type="checkbox" id="xml" name="smallMate" value="西米露"> 西米露</label>
-                    <label for="cd"><input type="checkbox" id="cd" name="smallMate" value="茶冻"> 茶冻</label>
-                    <label for="hd"><input type="checkbox" id="hd" name="smallMate" value="红豆"> 红豆</label>
-                    <label for="xc"><input type="checkbox" id="xc" name="smallMate" value="仙草"> 仙草</label>
+                    <div class="contect_inp"><input type="checkbox" id="bb" name="smallMate" value="波霸"><label
+                            for="bb">波霸</label>
+                    </div>
+                    <div class="contect_inp"><input type="checkbox" id="yg" name="smallMate" value="椰果"><label
+                            for="yg">椰果</label>
+                    </div>
+                    <div class="contect_inp"><input type="checkbox" id="xml" name="smallMate" value="西米露"><label
+                            for="xml">西米露</label>
+                    </div>
+                    <div class="contect_inp"><input type="checkbox" id="cd" name="smallMate" value="茶冻"><label
+                            for="cd">茶冻</label>
+                    </div>
+                    <div class="contect_inp"><input type="checkbox" id="hd" name="smallMate" value="红豆"><label
+                            for="hd">红豆</label>
+                    </div>
+                    <div class="contect_inp"><input type="checkbox" id="xc" name="smallMate" value="仙草"><label
+                            for="xc">仙草</label>
+                    </div>
                 </div>
             </div>
             <div class="item">
-                <div class="left">加价小料：</div>
+                <legend class="left">加价小料：</legend>
                 <div class="right" id="payMate" name="payMate">
-                    <label for="bql"><input type="checkbox" id="bql" name="payMate" value="冰淇淋(¥4)"> 冰淇淋(¥4)</label>
-                    <label for="bd"><input type="checkbox" id="bd" name="payMate" value="布丁(¥3)"> 布丁(¥3)</label>
-                    <label for="ns"><input type="checkbox" id="ns" name="payMate" value="奶霜(¥2)"> 奶霜(¥2)</label>
+                    <div class="contect_inp"><input type="checkbox" id="bql" name="payMate" value="冰淇淋(¥4)"><label
+                            for="bql">冰淇淋(¥4)</label>
+                    </div>
+                    <div class="contect_inp"><input type="checkbox" id="bd" name="payMate" value="布丁(¥3)"><label
+                            for="bd">布丁(¥3)</label>
+                    </div>
+                    <div class="contect_inp"><input type="checkbox" id="ns" name="payMate" value="奶霜(¥2)"><label
+                            for="ns">奶霜(¥2)</label>
+                    </div>
                 </div>
             </div>
             <div class="item">
-                <div class="left">是否去冰：</div>
+                <legend class="left">是否去冰：</legend>
                 <div class="right">
-                    <label for="yesIce"><input type="radio" id="yesIce" name="isIce" checked value="是"> 是</label>
-                    <label for="noIce"><input type="radio" id="noIce" name="isIce" value="否"> 否</label>
+                    <div class="contect_inp"><input type="radio" id="yesIce" name="isIce" checked value="是"><label
+                            for="yesIce">是</label>
+                    </div>
+                    <div class="contect_inp"><input type="radio" id="noIce" name="isIce" value="否"><label
+                            for="noIce">否</label>
+                    </div>
                 </div>
             </div>
             <div class="item">
-                <div class="left">是否去茶底：</div>
+                <legend class="left">是否去茶底：</legend>
                 <div class="right">
-                    <label for="yesisBottomTea"><input type="radio" id="yesisBottomTea" name="isBottomTea" value="是"
-                            checked>
-                        是</label>
-                    <label for="noisBottomTea"><input type="radio" id="noisBottomTea" name="isBottomTea" value="否">
-                        否</label>
+                    <div class="contect_inp"><input type="radio" id="yesisBottomTea" name="isBottomTea" value="是"
+                            checked><label for="yesisBottomTea"> 是</label>
+                    </div>
+                    <div class="contect_inp"><input type="radio" id="noisBottomTea" name="isBottomTea" value="否"><label
+                            for="noisBottomTea">
+                            否</label>
+                    </div>
                 </div>
             </div>
             <div class="item">
-                <div class="left">你的地址：</div>
+                <legend class="left">你的地址：</legend>
                 <div class="right">
                     <textarea name="address" id="" cols="20" rows="8" required></textarea>
                 </div>
             </div>
             <div class="item">
-                <div class="left">你的手机号：</div>
+                <legend class="left">你的手机号：</legend>
                 <div class="right">
                     <input type="text" name="phone" required>
                 </div>
             </div>
             <div class="item">
-                <div class="left">期待送达时间：</div>
+                <legend class="left">期待送达时间：</legend>
                 <div class="right">
                     <input type="time" name="time" id="" required>
                 </div>
             </div>
             <div class="item">
-                <div class="left">备注：</div>
+                <legend class="left">备注：</legend>
                 <div class="right">
                     <textarea name="comment" id="" cols="20" rows="8"></textarea>
                 </div>
             </div>
             <div class="item">
-                <div class="left">支付方式：</div>
+                <legend class="left">支付方式：</legend>
                 <div class="right">
-                    <label for="wechat"><input type="radio" id="wechat" name="payType" value="微信支付" checked>
-                        微信支付</label>
-                    <label for="zfb"><input type="radio" id="zfb" name="payType" value="支付宝"> 支付宝</label>
+                    <div class="contect_inp"><input type="radio" id="wechat" name="payType" value="微信支付" checked><label
+                            for="wechat">
+                            微信支付</label>
+                    </div>
+                    <div class="contect_inp"><input type="radio" id="zfb" name="payType" value="支付宝"><label for="zfb">
+                            支付宝</label>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="left"></div>
-                <div class="right">
-                    <input type="submit" value="提交" class="sub">
-                    <input type="reset" value="重置" class="btn">
-                </div>
+            <div class="itemlast">
+                <input type="submit" value="提交" class="sub">
+                <input type="reset" value="重置" class="btn">
             </div>
+
         </form>
         <!-- js引用 -->
         <script src="js/index.js"></script>
