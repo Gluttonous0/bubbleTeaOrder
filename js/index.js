@@ -30,7 +30,7 @@ const getOrderText = (formVal) => {
 
 //创建对象，引入提交表单内容
 const onSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     const formData = new FormData(form);
     const formVals = {};
     for (var pair of formData.entries()) {
@@ -50,7 +50,22 @@ const onSubmit = (e) => {
     alert(getOrderText(formVals));
 }
 
-form.addEventListener("submit", onSubmit);
+// form.addEventListener("submit", onSubmit);
+
+form.addEventListener("submit", (e) => {
+    const phone = document.querySelector('.phone').value;
+    console.log(phone);
+
+    //手机号码正则表达式校验
+    const phoneExp = /^1[3-9]\d{9}$/;
+    if (phoneExp.exec(phone)) {
+        console.log('走了这里');
+        onSubmit();
+    } else {
+        alert('请输入正确手机号');
+        e.preventDefault();
+    }
+});
 
 var scroll_top = document.querySelector('.scrolltop');
 var bodyTop = window.pageYOffset;
@@ -72,3 +87,5 @@ window.addEventListener('scroll', function () {
 scroll_top.addEventListener('click', function () {
     scrollTo(0, 0);
 })
+
+

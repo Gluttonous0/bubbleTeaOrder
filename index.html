@@ -45,7 +45,7 @@
             <div class="item">
                 <legend class="left">几杯：</legend>
                 <div class="right">
-                    <input type="number" name="num" required>
+                    <input type="number" name="num" oninput="if(value.length>2 )value=value.slice(0,2)" required>
                 </div>
             </div>
             <div class="item">
@@ -136,13 +136,14 @@
             <div class="item">
                 <legend class="left">你的地址：</legend>
                 <div class="right">
-                    <textarea name="address" id="" cols="20" rows="8" required></textarea>
+                    <textarea name="address" id="" cols="20" rows="8" maxlength=30 required></textarea>
                 </div>
             </div>
             <div class="item">
                 <legend class="left">你的手机号：</legend>
                 <div class="right">
-                    <input type="text" name="phone" required>
+                    <input type="number" name="phone" class="phone" required>
+                    <span id="phone_text"></span>
                 </div>
             </div>
             <div class="item">
@@ -154,7 +155,7 @@
             <div class="item">
                 <legend class="left">备注：</legend>
                 <div class="right">
-                    <textarea name="comment" id="" cols="20" rows="8"></textarea>
+                    <textarea name="comment" id="" cols="20" rows="8" maxlength=30></textarea>
                 </div>
             </div>
             <div class="item">
